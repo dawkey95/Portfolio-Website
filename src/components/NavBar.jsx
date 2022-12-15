@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
+import logo from '../assets/img/panda_logo.png';
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import GitHubIcon from '../assets/img/github-icon.png';
+import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
 	const [activeLink, setActiveLink] = useState('home');
@@ -7,7 +11,7 @@ const NavBar = () => {
 
 	const onUpdateActiveLink = (link) => {
 		setActiveLink(link);
-	}
+	};
 
 	useEffect(() => {
 		const onScroll = () => {
@@ -23,7 +27,7 @@ const NavBar = () => {
 		<Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
 			<Container>
 				<Navbar.Brand href="#home">
-					<img src={''} alt="Logo" />
+					<img src={logo} alt="Logo" />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
 					<span className="navbar-toggler-icon"></span>
@@ -59,7 +63,13 @@ const NavBar = () => {
 					<span className="navbar-text">
 						<div className="social-icon">
 							<a href="#">
-								<img src={''} alt="Github Icon" />
+								<img src={navIcon1} alt="LinkedIn Icon" />
+							</a>
+							<a href="https://github.com/dawkey95">
+								<img src={GitHubIcon} alt="Github Icon" />
+							</a>
+							<a href="#">
+								<img src={navIcon3} alt="Social Icon" />
 							</a>
 						</div>
 						<button
