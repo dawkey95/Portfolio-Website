@@ -7,8 +7,8 @@ const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [text, setText] = useState('');
-	const [delta, setDelta] = useState(300 );
-	const toRotate = ['Web Developer', 'Web Designer', 'Gamer'];
+	const [delta, setDelta] = useState(300);
+	const toRotate = ['Web Developer...', 'Web Designer...', 'Gamer...'];
 	const period = 2000;
 
 	useEffect(() => {
@@ -52,14 +52,18 @@ const Banner = () => {
 						<span className="tagline">Welcome to my Portfolio</span>
 						<h1>
 							{`Hi I'm Dawid `}
-              <br></br>
+							<br></br>
 							<span className="wrap span-text">{text}</span>
 						</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id atque
-							fuga ipsum. Esse sint voluptatum minima consequatur tempora eos
-							reiciendis nulla labore? Sint, excepturi totam porro obcaecati quisquam
-							atque!
+							I am an aspiring web developer with a keen interest in front-end
+							technologies. I believe we can never know enough and so I am on a journey
+							of learning, to better myself and constantly be pushing myself forward
+							into the...
+							<em>
+								<h4>unknown</h4>
+							</em>
+							.
 						</p>
 						<button
 							onClick={() => {
