@@ -15,12 +15,6 @@
 	font-weight: 400;
 }
 
-@font-face {
-	font-family: Dancing;
-	src: url('./assets/font/DancingScript-VariableFont_wght.ttf');
-	font-weight: 400;
-}
-
 /************ DEFAULT ************/
 * {
 	margin: 0;
@@ -131,7 +125,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
 	padding: 0px 0;
-	background-color: #121212;
+	background-color: rgba(0, 0, 0, 0.35);
 }
 
 nav.navbar a.navbar-brand {
@@ -344,6 +338,30 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	width: 72px;
 }
 
+.layers-4:before {
+	animation: 2.5s ease-in shooting-star infinite;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 72%;
+	position: absolute;
+	top: -80px;
+	width: 72px;
+}
+
+.layers-5:before {
+	animation: 4s ease-in shooting-star infinite;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 90%;
+	position: absolute;
+	top: -80px;
+	width: 72px;
+}
+
 /************ BANNER ************/
 .banner {
 	margin-top: 0;
@@ -416,10 +434,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
 	border-right: 0.08em solid #666;
-}
-
-.span-text {
-	font-family: Dancing;
 }
 
 /************ SKILLS ************/
