@@ -3,6 +3,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../assets/img/panda_logo.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import 'animate.css'
 
 const NavBar = () => {
 	const [activeLink, setActiveLink] = useState('home');
@@ -26,7 +27,7 @@ const NavBar = () => {
 		<Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
 			<Container>
 				<Navbar.Brand href="#home">
-					<img src={logo} alt="Logo" />
+					<img src={logo} alt="Logo" className="logo animate__animated animate__pulse" />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
 					<span className="navbar-toggler-icon"></span>

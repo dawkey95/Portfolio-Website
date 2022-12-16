@@ -94,6 +94,25 @@ p.danger {
 }
 
 /************ NAVBAR CSS ************/
+.animate__pulse {
+	animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg) scale(0.8);
+	}
+	33% {
+		transform: rotate(5deg) scale(1);
+	}
+	66% {
+		transform: rotate(-5deg) scale(0.9);
+	}
+	to {
+		transform: rotate(0deg) scale(0.8);
+	}
+}
+
 nav.navbar {
 	padding: 18px 0;
 	position: fixed;
