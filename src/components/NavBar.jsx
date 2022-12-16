@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../assets/img/panda_logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import GitHubIcon from '../assets/img/github-icon.png';
+// import GitHubIcon from '../assets/img/github-icon.png';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
@@ -63,13 +64,19 @@ const NavBar = () => {
 					<span className="navbar-text">
 						<div className="social-icon">
 							<a href="#">
-								<img src={navIcon1} alt="LinkedIn Icon" />
+								<div className="div-img">
+									<img src={navIcon1} alt="LinkedIn Icon" />
+								</div>
 							</a>
 							<a href="https://github.com/dawkey95">
-								<img src={GitHubIcon} alt="Github Icon" />
+								<div className="div-img">
+									<GitHubIcon sx={{ color: 'white' }} />
+								</div>
 							</a>
 							<a href="#">
-								<img src={navIcon3} alt="Social Icon" />
+								<div className="div-img">
+									<img src={navIcon3} alt="Social Icon" />
+								</div>
 							</a>
 						</div>
 						<button

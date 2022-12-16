@@ -107,7 +107,7 @@ nav.navbar.scrolled {
 	background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-	width: 20%;
+	width: 15%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
 	font-weight: 400;
@@ -154,12 +154,12 @@ span.navbar-text {
 .social-icon a:hover::before {
 	transform: scale(1);
 }
-.social-icon a img {
+.social-icon a .div-img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover .div-img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
 		hue-rotate(346deg) brightness(95%) contrast(86%);
 }
