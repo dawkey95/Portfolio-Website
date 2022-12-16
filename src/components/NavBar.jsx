@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../assets/img/panda_logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-// import GitHubIcon from '../assets/img/github-icon.png';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
 	const [activeLink, setActiveLink] = useState('home');
@@ -63,20 +61,19 @@ const NavBar = () => {
 					</Nav>
 					<span className="navbar-text">
 						<div className="social-icon">
-							<a href="#">
-								<div className="div-img">
-									<img src={navIcon1} alt="LinkedIn Icon" />
-								</div>
+							<a
+								href="https://www.linkedin.com/in/dawidkeyser/"
+								target={'_blank'}
+								rel={'noopener noreferrer'}
+							>
+								<LinkedInIcon style={{ color: 'white' }} className="s-icons" />
 							</a>
-							<a href="https://github.com/dawkey95">
-								<div className="div-img">
-									<GitHubIcon sx={{ color: 'white' }} />
-								</div>
-							</a>
-							<a href="#">
-								<div className="div-img">
-									<img src={navIcon3} alt="Social Icon" />
-								</div>
+							<a
+								href="https://github.com/dawkey95"
+								target={'_blank'}
+								rel={'noopener noreferrer'}
+							>
+								<GitHubIcon sx={{ color: 'white' }} className="s-icons" />
 							</a>
 						</div>
 						<button
