@@ -315,7 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .layers-2:before {
-	animation: 3s linear 5s shooting-star infinite;
+	animation: 3.2s linear 5s shooting-star infinite;
 	background-image: url('http://imgur.com/ilhrli3.png');
 	background-size: 72px 50px;
 	content: ' ';
