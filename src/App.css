@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/************ DEFAULT CSS ************/
+/************ DEFAULT ************/
 * {
 	margin: 0;
 	padding: 0;
@@ -93,7 +93,7 @@ p.danger {
 	color: red;
 }
 
-/************ NAVBAR CSS ************/
+/************ NAVBAR ************/
 .animate__pulse {
 	animation: rotation 5s infinite linear;
 }
@@ -114,6 +114,7 @@ p.danger {
 }
 
 nav.navbar {
+	position: relative;
 	padding: 18px 0;
 	position: fixed;
 	width: 100%;
@@ -286,7 +287,58 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ BANNER CSS ************/
+/************ SHOOTING STARS ************/
+@keyframes shooting-star {
+	0% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	25% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(-270px, 180px, 0);
+	}
+}
+
+.layers:before {
+	animation: 1.8s linear 3s shooting-star infinite;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 22%;
+	position: absolute;
+	top: -50px;
+	width: 72px;
+}
+
+.layers-2:before {
+	animation: 3s linear 5s shooting-star infinite;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 30%;
+	position: absolute;
+	top: -20px;
+	width: 72px;
+}
+
+.layers-3:before {
+	animation: 2.5s linear 5s shooting-star infinite;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 12%;
+	position: absolute;
+	top: -20px;
+	width: 72px;
+}
+
+/************ BANNER ************/
 .banner {
 	margin-top: 0;
 	padding: 260px 0 100px 0;
@@ -360,7 +412,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	border-right: 0.08em solid #666;
 }
 
-/************ SKILLS CSS ************/
+/************ SKILLS ************/
 .skill {
 	padding: 0 0 50px 0;
 	position: relative;
@@ -526,7 +578,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	z-index: -4;
 }
 
-/************ PROJECTS CSS ************/
+/************ PROJECTS ************/
 .contact {
 	background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
 	padding: 60px 0 200px 0;
@@ -602,7 +654,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	width: 100%;
 }
 
-/************ FOOTER CSS ************/
+/************ FOOTER ************/
 .footer {
 	padding: 0 0 50px 0;
 	background-image: url('./assets/img/footer-bg.png');
