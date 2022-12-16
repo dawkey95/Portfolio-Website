@@ -65,6 +65,10 @@ const Banner = () => {
 							</em>
 							.
 						</p>
+						<p className='quote'>
+							“For the things we have to learn before we can do them, we learn by doing
+							them.” ― Aristotle
+						</p>
 						<button
 							onClick={() => {
 								console.log('This is clicked');

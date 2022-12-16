@@ -446,6 +446,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	font-family: Dancing;
 }
 
+.quote {
+	font-family: Dancing;
+	font-size: medium;
+}
+
 /************ SKILLS ************/
 .skill {
 	padding: 0 0 50px 0;
