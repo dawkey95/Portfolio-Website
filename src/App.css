@@ -446,6 +446,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	font-family: Dancing;
 }
 
+.about-me {
+	text-align: justify;
+}
+
 .quote {
 	font-family: Dancing;
 	font-size: medium;
