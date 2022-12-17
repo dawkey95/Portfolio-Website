@@ -381,6 +381,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.banner img {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
 .banner .tagline {
 	font-weight: 700;
 	letter-spacing: 0.8px;
