@@ -55,7 +55,7 @@ const Banner = () => {
 							<br></br>
 							<span className="wrap span-text">{text}</span>
 						</h1>
-						<p className='about-me'>
+						<p className="about-me">
 							I am an aspiring web developer with a keen interest in front-end
 							technologies. I believe we can never know enough and so I am on a journey
 							of learning, to better myself and constantly be pushing myself forward
