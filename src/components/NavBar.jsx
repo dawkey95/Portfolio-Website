@@ -31,7 +31,7 @@ const NavBar = () => {
 					<img
 						src={logo}
 						alt="Logo"
-						className="logo animate__animated animate__pulse"
+						className="logo animate__pulse"
 					/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">

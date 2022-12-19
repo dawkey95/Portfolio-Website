@@ -21,7 +21,6 @@
 	font-weight: 400;
 }
 
-
 /************ DEFAULT ************/
 * {
 	margin: 0;
@@ -100,7 +99,6 @@ p.danger {
 	color: red;
 }
 
-
 /************ NAVBAR ************/
 .animate__pulse {
 	animation: rotation 5s infinite linear;
@@ -123,17 +121,18 @@ p.danger {
 
 nav.navbar {
 	position: relative;
-	padding: 18px 0;
-	position: fixed;
+	padding: 10px 0;
 	width: 100%;
+	position: fixed;
 	top: 0;
 	z-index: 9999;
 	transition: 0.32s ease-in-out;
+	background: transparent;
 }
 
 nav.navbar.scrolled {
 	padding: 0px 0;
-	background-color: rgba(0, 0, 0, 0.35);
+	/* background-color: rgba(0, 0, 0, 0); */
 }
 
 nav.navbar a.navbar-brand {
@@ -295,7 +294,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-
 /************ SHOOTING STARS ************/
 @keyframes shooting-star {
 	0% {
@@ -370,7 +368,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	top: -80px;
 	width: 72px;
 }
-
 
 /************ BANNER ************/
 .banner {
@@ -466,7 +463,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	font-size: medium;
 }
 
-
 /************ SKILLS ************/
 .skill {
 	padding: 0 0 50px 0;
@@ -507,7 +503,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	width: 40%;
 	z-index: -4;
 }
-
 
 /************ PROJECTS CSS ************/
 .project {
@@ -635,7 +630,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	z-index: -4;
 }
 
-
 /************ PROJECTS ************/
 .contact {
 	background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -711,7 +705,6 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .contact form button:hover::before {
 	width: 100%;
 }
-
 
 /************ FOOTER ************/
 .footer {
