@@ -64,7 +64,6 @@ const Banner = () => {
 							<em>
 								<h4>unknown</h4>
 							</em>
-							.
 						</p>
 						<p className="quote">
 							“For the things we have to learn before we can do them, we learn by doing

@@ -3,7 +3,6 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 import logo from '../assets/img/panda_logo.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import 'animate.css';
 import ShootingStars from './effects/ShootingStars';
 
 const NavBar = () => {
