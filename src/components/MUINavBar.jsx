@@ -17,7 +17,7 @@ import PropTypes from 'prop-types';
 import logo from '../assets/img/panda_logo.png';
 import ShootingStars from './effects/ShootingStars';
 
-const pages = ['Home', 'Skills', 'Projects'];
+const pages = ['home', 'skills', 'projects'];
 const pageLink = ['#home', '#skills', '#projects'];
 
 function HideOnScroll(props) {
@@ -59,11 +59,11 @@ const ResponsiveAppBar = (props) => {
 	return (
 		<HideOnScroll {...props}>
 			<AppBar position="fixed" color="transparent" elevation={0}>
-				<Container maxWidth="100vw" sx={{m: 'auto'}}>
+				<Container maxWidth="100vw" sx={{ m: 'auto' }}>
 					<Toolbar disableGutters>
 						<Box
 							className="navbar-logo"
-							sx={{ width: '10em',  display: { xs: 'none', md: 'flex' } }}
+							sx={{ width: '10em', display: { xs: 'none', md: 'flex' } }}
 						>
 							<img src={logo} alt="Logo" className="logo animate__pulse" />
 						</Box>
@@ -102,7 +102,17 @@ const ResponsiveAppBar = (props) => {
 							>
 								{pages.map((page) => (
 									<MenuItem key={page} onClick={handleCloseNavMenu}>
-										<Typography textAlign="center">{page}</Typography>
+										<Link
+											color="inherit"
+											underline="none"
+											href={`#${page}`}
+											onClick={() => {
+												console.log(`Connect #href to other sections`);
+											}}
+										>
+											{page.charAt(0).toUpperCase() + page.slice(1)}
+										</Link>
+										{/* <Typography textAlign="center">{page}</Typography> */}
 									</MenuItem>
 								))}
 							</Menu>
@@ -115,7 +125,16 @@ const ResponsiveAppBar = (props) => {
 									onClick={handleCloseNavMenu}
 									sx={{ my: 2, color: 'white', display: 'block' }}
 								>
-									{page}
+									<Link
+										color="inherit"
+										underline="none"
+										href={`#${page}`}
+										onClick={() => {
+											console.log(`Connect #href to other sections`);
+										}}
+									>
+										{page.charAt(0).toUpperCase() + page.slice(1)}
+									</Link>
 								</Button>
 							))}
 						</Box>
