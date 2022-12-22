@@ -59,18 +59,18 @@ const ResponsiveAppBar = (props) => {
 	return (
 		<HideOnScroll {...props}>
 			<AppBar position="fixed" color="transparent" elevation={0}>
-				<Container maxWidth="xl">
+				<Container maxWidth="100vw" sx={{m: 'auto'}}>
 					<Toolbar disableGutters>
 						<Box
 							className="navbar-logo"
-							sx={{ width: '15%',  display: { xs: 'none', md: 'flex' } }}
+							sx={{ width: '10em',  display: { xs: 'none', md: 'flex' } }}
 						>
 							<img src={logo} alt="Logo" className="logo animate__pulse" />
 						</Box>
 
 						<Box
 							justifyContent="flex-end"
-							sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+							sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, m: 5 }}
 						>
 							<IconButton
 								size="large"
