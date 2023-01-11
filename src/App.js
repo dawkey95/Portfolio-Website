@@ -1,4 +1,3 @@
-import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
 import MUINavBar from './components/MUINavBar';
