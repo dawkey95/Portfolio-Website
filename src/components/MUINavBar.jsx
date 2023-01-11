@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -18,13 +17,9 @@ import logo from '../assets/img/panda_logo.png';
 import ShootingStars from './effects/ShootingStars';
 
 const pages = ['home', 'skills', 'projects'];
-const pageLink = ['#home', '#skills', '#projects'];
 
 function HideOnScroll(props) {
 	const { children, window } = props;
-	// Note that you normally won't need to set the window ref as useScrollTrigger
-	// will default to window.
-	// This is only being set here because the demo is in an iframe.
 	const trigger = useScrollTrigger({
 		target: window ? window() : undefined,
 	});
@@ -38,10 +33,6 @@ function HideOnScroll(props) {
 
 HideOnScroll.propTypes = {
 	children: PropTypes.element.isRequired,
-	/**
-	 * Injected by the documentation to work in an iframe.
-	 * You won't need it on your project.
-	 */
 	window: PropTypes.func,
 };
 
@@ -63,7 +54,7 @@ const ResponsiveAppBar = (props) => {
 					<Toolbar disableGutters>
 						<Box
 							className="navbar-logo"
-							sx={{ width: '10em', display: { xs: 'none', md: 'flex' } }}
+							sx={{ width: '6em', display: { xs: 'flex', md: 'flex' } }}
 						>
 							<img src={logo} alt="Logo" className="logo animate__pulse" />
 						</Box>
@@ -74,7 +65,6 @@ const ResponsiveAppBar = (props) => {
 						>
 							<IconButton
 								size="large"
-								aria-label="account of current user"
 								aria-controls="menu-appbar"
 								aria-haspopup="true"
 								onClick={handleOpenNavMenu}
@@ -102,17 +92,9 @@ const ResponsiveAppBar = (props) => {
 							>
 								{pages.map((page) => (
 									<MenuItem key={page} onClick={handleCloseNavMenu}>
-										<Link
-											color="inherit"
-											underline="none"
-											href={`#${page}`}
-											onClick={() => {
-												console.log(`Connect #href to other sections`);
-											}}
-										>
+										<Link color="inherit" underline="none" href={`#${page}`}>
 											{page.charAt(0).toUpperCase() + page.slice(1)}
 										</Link>
-										{/* <Typography textAlign="center">{page}</Typography> */}
 									</MenuItem>
 								))}
 							</Menu>
@@ -123,15 +105,17 @@ const ResponsiveAppBar = (props) => {
 								<Button
 									key={page}
 									onClick={handleCloseNavMenu}
-									sx={{ my: 2, color: 'white', display: 'block' }}
+									sx={{ color: 'white', my: 2, display: 'block' }}
 								>
 									<Link
-										color="inherit"
-										underline="none"
-										href={`#${page}`}
-										onClick={() => {
-											console.log(`Connect #href to other sections`);
+										sx={{
+											color: 'inherit',
+											underline: 'none',
+											'&:hover': {
+												color: 'rgb(190, 196, 192)',
+											},
 										}}
+										href={`#${page}`}
 									>
 										{page.charAt(0).toUpperCase() + page.slice(1)}
 									</Link>

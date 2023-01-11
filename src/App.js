@@ -9,7 +9,6 @@ function App() {
 	return (
 		<div className="App">
 			<MUINavBar />
-			{/* <NavBar /> */}
 			<Banner />
 			<Skills id="skills" />
 		</div>
