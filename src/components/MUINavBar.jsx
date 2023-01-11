@@ -110,7 +110,7 @@ const ResponsiveAppBar = (props) => {
 									<Link
 										sx={{
 											color: 'inherit',
-											underline: 'none',
+											textDecoration: 'none',
 											'&:hover': {
 												color: 'rgb(190, 196, 192)',
 											},
