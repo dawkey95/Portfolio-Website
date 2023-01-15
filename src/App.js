@@ -1,4 +1,3 @@
-// import Banner from './components/Banner';
 import Skills from './components/Skills';
 import MUINavBar from './components/MUINavBar';
 import './App.css';
@@ -10,7 +9,6 @@ function App() {
 		<div className="App">
 			<MUINavBar />
 			<MUIBanner />
-			{/* <Banner /> */}
 			<Skills id="skills" />
 		</div>
 	);
