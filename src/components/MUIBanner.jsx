@@ -50,24 +50,7 @@ const MUIBanner = () => {
 		<section className="banner" id="home">
 			<Container>
 				<Grid container spacing={2}>
-					<Grid xs={6} md={8}>
-						<p>xs=6 md=8</p>
-					</Grid>
-					<Grid xs={6} md={4}>
-						<p>xs=6 md=4</p>
-					</Grid>
-					<Grid xs={6} md={4}>
-						<p>xs=6 md=4</p>
-					</Grid>
-					<Grid xs={6} md={8}>
-						<p>xs=6 md=8</p>
-					</Grid>
-				</Grid>
-			</Container>
-
-			{/* <Container>
-				<Row className="align-items-center">
-					<Col xs={12} md={6} xl={7}>
+					<Grid xs={12} md={6} xl={7}>
 						<span className="tagline">Welcome to my Portfolio</span>
 						<h1>
 							{`Hi I'm Dawid `}
@@ -95,12 +78,12 @@ const MUIBanner = () => {
 							Let's Connect
 							<ArrowCircleRightIcon />
 						</button>
-					</Col>
-					<Col xs={12} md={6} xl={5}>
+					</Grid>
+					<Grid xs={12} md={6} xl={5}>
 						<img src={HeaderImage} alt="Header" />
-					</Col>
-				</Row>
-			</Container> */}
+					</Grid>
+				</Grid>
+			</Container>
 		</section>
 	);
 };
