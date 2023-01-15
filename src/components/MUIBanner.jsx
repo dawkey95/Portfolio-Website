@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Col, Row, Container } from 'react-bootstrap';
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Container from '@mui/material/Container';
+// import { Col, Row, Container } from 'react-bootstrap';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import HeaderImage from '../assets/img/panda-astronaut.png';
 
-const Banner = () => {
+const MUIBanner = () => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [text, setText] = useState('');
@@ -19,7 +21,6 @@ const Banner = () => {
 		return () => {
 			clearInterval(ticker);
 		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [text]);
 
 	const tick = () => {
@@ -48,8 +49,8 @@ const Banner = () => {
 	return (
 		<section className="banner" id="home">
 			<Container>
-				<Row className="align-items-center">
-					<Col xs={12} md={6} xl={7}>
+				<Grid container spacing={2}>
+					<Grid xs={12} md={6} xl={7}>
 						<span className="tagline">Welcome to my Portfolio</span>
 						<h1>
 							{`Hi I'm Dawid `}
@@ -77,14 +78,14 @@ const Banner = () => {
 							Let's Connect
 							<ArrowCircleRightIcon />
 						</button>
-					</Col>
-					<Col xs={12} md={6} xl={5}>
+					</Grid>
+					<Grid xs={12} md={6} xl={5}>
 						<img src={HeaderImage} alt="Header" />
-					</Col>
-				</Row>
+					</Grid>
+				</Grid>
 			</Container>
 		</section>
 	);
 };
 
-export default Banner;
+export default MUIBanner;
