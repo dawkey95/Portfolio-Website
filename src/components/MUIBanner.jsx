@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
-// import { Col, Row, Container } from 'react-bootstrap';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import HeaderImage from '../assets/img/panda-astronaut.png';
 
