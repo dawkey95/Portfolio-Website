@@ -1,6 +1,8 @@
 import Carousel from 'react-multi-carousel';
+import Grid from '@mui/material/Unstable_Grid2';
+import Container from '@mui/material/Container';
 import 'react-multi-carousel/lib/styles.css';
-import { Container, Row, Col } from 'react-bootstrap';
+// import { Container, Row, Col } from 'react-bootstrap';
 import colorSharp from '../assets/img/color-sharp.png';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -11,10 +13,9 @@ const gitPerc = 60;
 const jsLibraryPerc = 55;
 const responsiveWebPerc = 75;
 
-const Skills = () => {
+const MUISkills = () => {
 	const responsive = {
 		superLargeDesktop: {
-			// the naming can be any, depends on you.
 			breakpoint: { max: 4000, min: 3000 },
 			items: 5,
 		},
@@ -35,8 +36,8 @@ const Skills = () => {
 	return (
 		<section className="skill" id="skills">
 			<Container>
-				<Row>
-					<Col>
+				<Grid container spacing={2}>
+					<Grid>
 						<div className="skill-bx">
 							<h2>Skills</h2>
 							<p>
@@ -51,20 +52,20 @@ const Skills = () => {
 								className="skill-slider"
 							>
 								<div className="item">
-									<div style={{ width: 150, height: 300 }}>
+									<div style={{ width: `100%`, height: 300 }}>
 										<CircularProgressbar
 											value={htmlPerc}
 											text={`${htmlPerc}%`}
 											styles={buildStyles({
-												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`
+												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`,
 											})}
 										/>
-										<h5 style={{ paddingTop: 10 }}>HTML and CSS</h5>
+										<h5 style={{ paddingTop: 20 }}>HTML and CSS</h5>
 									</div>
 								</div>
 
 								<div className="item">
-									<div style={{ width: 150, height: 300 }}>
+									<div style={{ width: `100%`, height: 300 }}>
 										<CircularProgressbar
 											value={javascriptPerc}
 											text={`${javascriptPerc}%`}
@@ -74,12 +75,12 @@ const Skills = () => {
 								</div>
 
 								<div className="item">
-									<div style={{ width: 150, height: 300 }}>
+									<div style={{ width: `100%`, height: 300 }}>
 										<CircularProgressbar
 											value={gitPerc}
 											text={`${gitPerc}%`}
 											styles={buildStyles({
-												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`
+												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`,
 											})}
 										/>
 										<h5 style={{ paddingTop: 20 }}>Git</h5>
@@ -87,7 +88,7 @@ const Skills = () => {
 								</div>
 
 								<div className="item">
-									<div style={{ width: 150, height: 300 }}>
+									<div style={{ width: `100%`, height: 300 }}>
 										<CircularProgressbar
 											value={jsLibraryPerc}
 											text={`${jsLibraryPerc}%`}
@@ -97,12 +98,12 @@ const Skills = () => {
 								</div>
 
 								<div className="item">
-									<div style={{ width: 150, height: 300 }}>
+									<div style={{ width: `100%`, height: 300 }}>
 										<CircularProgressbar
 											value={responsiveWebPerc}
 											text={`${responsiveWebPerc}%`}
 											styles={buildStyles({
-												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`
+												pathColor: `rgba(163, 22, 227, ${htmlPerc / 100})`,
 											})}
 										/>
 										<h5 style={{ paddingTop: 20 }}>Responsive Web Design</h5>
@@ -110,12 +111,12 @@ const Skills = () => {
 								</div>
 							</Carousel>
 						</div>
-					</Col>
-				</Row>
+					</Grid>
+				</Grid>
 			</Container>
 			<img className="background-image-left" src={colorSharp} alt="" />
 		</section>
 	);
 };
 
-export default Skills;
+export default MUISkills;
