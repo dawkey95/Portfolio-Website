@@ -20,6 +20,7 @@ const MUIBanner = () => {
 		return () => {
 			clearInterval(ticker);
 		};
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [text]);
 
 	const tick = () => {
