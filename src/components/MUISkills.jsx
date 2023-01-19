@@ -2,7 +2,6 @@ import Carousel from 'react-multi-carousel';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import 'react-multi-carousel/lib/styles.css';
-// import { Container, Row, Col } from 'react-bootstrap';
 import colorSharp from '../assets/img/color-sharp.png';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
